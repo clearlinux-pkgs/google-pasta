@@ -1,5 +1,5 @@
 PKG_NAME := google-pasta
-URL = https://files.pythonhosted.org/packages/7a/4e/c3e35716d57eba02e49b8ad72a744435df1935f189fbc5f47edafb6d4f00/google-pasta-0.1.7.tar.gz
+URL = https://files.pythonhosted.org/packages/57/ac/aebe06c6a3154ce21fe82d42f31511ababe87dc30c1b041716493e061633/google-pasta-0.1.8.tar.gz
 ARCHIVES = 
 
 include ../common/Makefile.common
