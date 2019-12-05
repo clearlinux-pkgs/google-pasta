@@ -4,7 +4,7 @@
 #
 Name     : google-pasta
 Version  : 0.1.8
-Release  : 4
+Release  : 5
 URL      : https://files.pythonhosted.org/packages/57/ac/aebe06c6a3154ce21fe82d42f31511ababe87dc30c1b041716493e061633/google-pasta-0.1.8.tar.gz
 Source0  : https://files.pythonhosted.org/packages/57/ac/aebe06c6a3154ce21fe82d42f31511ababe87dc30c1b041716493e061633/google-pasta-0.1.8.tar.gz
 Summary  : pasta is an AST-based Python refactoring library
