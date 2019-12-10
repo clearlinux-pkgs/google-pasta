@@ -4,7 +4,7 @@
 #
 Name     : google-pasta
 Version  : 0.1.8
-Release  : 6
+Release  : 7
 URL      : https://files.pythonhosted.org/packages/57/ac/aebe06c6a3154ce21fe82d42f31511ababe87dc30c1b041716493e061633/google-pasta-0.1.8.tar.gz
 Source0  : https://files.pythonhosted.org/packages/57/ac/aebe06c6a3154ce21fe82d42f31511ababe87dc30c1b041716493e061633/google-pasta-0.1.8.tar.gz
 Summary  : pasta is an AST-based Python refactoring library
@@ -42,14 +42,14 @@ python3 components for the google-pasta package.
 
 %prep
 %setup -q -n google-pasta-0.1.8
+cd %{_builddir}/google-pasta-0.1.8
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1572972343
-# -Werror is for werrorists
+export SOURCE_DATE_EPOCH=1576010410
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
@@ -65,7 +65,7 @@ python3 setup.py build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
-PYTHONPATH=%{buildroot}/usr/lib/python3.7/site-packages python3 setup.py test
+PYTHONPATH=%{buildroot}$(python -c "import sys; print(sys.path[-1])") python setup.py test
 %install
 export MAKEFLAGS=%{?_smp_mflags}
 rm -rf %{buildroot}
