@@ -4,7 +4,7 @@
 #
 Name     : google-pasta
 Version  : 0.1.8
-Release  : 8
+Release  : 9
 URL      : https://files.pythonhosted.org/packages/57/ac/aebe06c6a3154ce21fe82d42f31511ababe87dc30c1b041716493e061633/google-pasta-0.1.8.tar.gz
 Source0  : https://files.pythonhosted.org/packages/57/ac/aebe06c6a3154ce21fe82d42f31511ababe87dc30c1b041716493e061633/google-pasta-0.1.8.tar.gz
 Summary  : pasta is an AST-based Python refactoring library
@@ -35,6 +35,7 @@ python components for the google-pasta package.
 Summary: python3 components for the google-pasta package.
 Group: Default
 Requires: python3-core
+Provides: pypi(google-pasta)
 
 %description python3
 python3 components for the google-pasta package.
@@ -49,7 +50,8 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1576010410
+export SOURCE_DATE_EPOCH=1582931713
+# -Werror is for werrorists
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
